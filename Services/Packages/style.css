@@ -215,6 +215,6 @@ nav {
   .packagesCards img {
     position: relative;
     background-size: cover;
-    height: fit-content;
+    height: 250px;
   }
 }

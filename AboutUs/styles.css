@@ -32,9 +32,6 @@ header {
   width: 100vw !important;
 }
 
-.navbar-nav .nav-item {
-  border-radius: 50px;
-}
 .navbar-nav .nav-item:hover {
   background-color: #0d4599;
   -webkit-box-shadow: 0px 10px 13px -7px #000000,
@@ -56,6 +53,21 @@ nav {
 }
 .resNavBar {
   background-color: transparent;
+}
+
+.navigationDropdown ul {
+  background-color: #1363df;
+}
+.navigationDropdown a {
+  color: white;
+}
+.navigationDropdown a:hover {
+  color: white;
+  background-color: #0d4599;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    0px 1px 28px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 13px -7px #000000, 0px 1px 28px 6px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid white;
 }
 
 /* Navbar */

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transportations</title>
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- bootstrap -->
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- css -->
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- jquery -->
+    <!-- fontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- fontAwesome -->
+  </head>
+  <body>
+    <header>
+      <div class="mainHeading">
+        <img
+          class="mainCover"
+          src="https://www.sankileisure.com/wp-content/uploads/2018/04/Udawalawe-National-Park-Safari-e1523082193542.jpg"
+          alt=""
+        />
+        <div class="header-content">
+          <h2>Transportations</h2>
+          <div class="line"></div>
+          <h3>It's your ride choose what you prefer !</h3>
+        </div>
+      </div>
+      <nav id="navBarId" class="resNavBar navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../../index.html"
+            ><span style="font-size: 130%">Travel</span>
+            <span style="font-size: 130%; color: #ffa500">Ceylon</span></a
+          >
+          <button
+            onclick="changeColor()"
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-md-auto gap-2">
+              <li class="nav-item rounded">
+                <a class="nav-link active" href="../../AboutUs/index.html"
+                  >About us</a
+                >
+              </li>
+
+              <li class="navigationDropdown nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Explore
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../../Explore/Locations/Turism(215093L).html"
+                      >Locations</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#">People</a></li>
+
+                  <li>
+                    <a class="dropdown-item" href="#">History</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Goverment & Society</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Economy</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Cultural Life</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="navigationDropdown nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="../Packages/index.html"
+                      >Packages</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../Guides/index.html"
+                      >Tour Guides</a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="./index.html"
+                      >Transportations</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Accommodation</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item rounded">
+                <a class="nav-link active" href="../../Feedback/tourism1.html"
+                  >Feedbacks</a
+                >
+              </li>
+              <li class="nav-item rounded">
+                <a
+                  class="nav-link active"
+                  href="../../ContactUs/Tourism 215070N.html"
+                  >Contact us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="packagesCards">
+        <div class="card mb-3">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img
+                src="https://srilankantourguides.com/wp-content/uploads/2018/03/safari-13.jpg"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Safari Jeep</h5>
+                <p class="card-text">
+                  We provide Safari jeep tours in Wilpattu, Minneriya, Kawdulla,
+                  Udawalawa and Yala National Park with experienced drivers for
+                  half day and full day safaris.
+                </p>
+                <p class="card-text">
+                  <button type="button" class="btn btn-primary">
+                    Rent Now
+                  </button>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img
+                src="https://www.lanka-excursions-holidays.com/uploads/4/0/2/1/40216937/8449390_orig.jpg"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Car / Van Rental</h5>
+                <p class="card-text">
+                  Rent a van with expirianced driver / guide / chaufer guide
+                  from Mihintale, Sri Lanka, for a day, a week, for a fortnight
+                  or a month. No matter, the duration of the required
+                  transportation, book your holiday packages.
+                </p>
+                <p class="card-text">
+                  <button type="button" class="btn btn-primary">
+                    Rent Now
+                  </button>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img
+                src="http://blog.cinnamonhotels.com/wp-content/uploads/2014/06/train-travel-srilanka-848x440.jpg"
+                alt="..."
+              />
+            </div>
+
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Sri Lanka train journey</h5>
+                <p class="card-text">
+                  In the heart of Sri Lanka, you'll find one of the world's most
+                  scenic train trips. The train from Kandy to Ella is a
+                  beautiful 7-hour ride through lush tea plantations, rolling
+                  rice fields, and endless mountain views. Incredibly, it's also
+                  one of the world's best travel bargains—the entire journey
+                  costs just 73 cents.
+                </p>
+                <p class="card-text">
+                  <button type="button" class="btn btn-primary">
+                    Book your seats
+                  </button>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img
+                src="https://www.artravele.com/wp-content/uploads/2020/05/Cinnamon-Air.jpg"
+                alt="..."
+              />
+            </div>
+
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Sea Plane Rides</h5>
+                <p class="card-text">
+                  The Sri Lankan airlines air taxi service between Colombo
+                  International Airport, Koggala (Galle) and Dickwella
+                  (Tangalle) as well as Kandy, Nuwara Eliya and Dambulla, has
+                  dramatically increased the options for holidays in Sri
+                  Lanka.With judicious use of the seaplane it is now possible to
+                  tour the country in a relaxed manner while still taking in all
+                  the major sites. It is now possible to avoid the long car
+                  journey and take to the skies instead. The views of the
+                  western coastline on one side and the hills on the other is
+                  spellbinding and it can even save you money!
+                </p>
+                <p class="card-text">
+                  <button type="button" class="btn btn-primary">
+                    Book your seats
+                  </button>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img
+                src="https://assets.anantara.com/image/upload/q_auto,f_auto,c_limit,w_1440/media/minor/anantara/images/brandpage/signature-experiences/sri-lanka/anantara_experience_campaign_sri_lanka_1920x1037-3.jpg"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Helicopter Trips</h5>
+                <p class="card-text">
+                  Bentota to Sigiriya Helicopter tour is known as one of the
+                  most scenic helicopter tour in the world.We facilitate our
+                  client ground transport from landing point to Historical Sites
+                  & back along with Chauffeur Guide.The tour pick up points is
+                  Bentota beach and landing point is Sigiriya airfield.During
+                  the journey the helicopter goes passing From the air,Sigiriya
+                  sky and the bentota beach sky.
+                </p>
+                <p class="card-text">
+                  <button type="button" class="btn btn-primary">
+                    Rent Now
+                  </button>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <button
+      onclick='window.scrollTo({top: 0, behavior: "smooth"});'
+      id="topButton"
+    >
+      <i class="fa-solid fa-circle-arrow-up"></i>
+    </button>
+
+    <footer>
+      <div class="text-white" style="background-color: #1363df">
+        <p class="text-center p-4 m-0">Footer Content</p>
+      </div>
+    </footer>
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          var scroll = $(window).scrollTop();
+          if (scroll > 50) {
+            $(".resNavBar").css("background", "#1363DF");
+            $(".resNavBar").css(
+              "box-shadow",
+              "0px 10px 13px -7px #000000, 0px 21px 14px 1px rgba(0,0,0,0.04)"
+            );
+          } else {
+            $(".resNavBar").css("background", "transparent");
+            $(".resNavBar").css(
+              "box-shadow",
+              "0px 0 0 0 transparent, 0px 0 0 1px transparent"
+            );
+          }
+        });
+      });
+
+      function changeColor() {
+        document.getElementById("navBarId").style.backgroundColor = "#1363DF";
+        document.getElementById("navBarId").style.boxShadow =
+          "0px 10px 13px -7px #000000, 0px 21px 14px 1px rgba(0,0,0,0.04)";
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

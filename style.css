@@ -20,6 +20,8 @@ header {
 }
 .navigationDropdown ul {
   background-color: #1363df;
+  border: 1px solid white;
+  text-align: center;
 }
 .navigationDropdown a {
   color: white;
@@ -31,6 +33,8 @@ header {
     0px 1px 28px 6px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 10px 13px -7px #000000, 0px 1px 28px 6px rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid white;
+
+  border: 1px solid white;
 }
 
 .navbar-nav .nav-item:hover {

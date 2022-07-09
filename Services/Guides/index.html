@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Guides</title>
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- bootstrap -->
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- css -->
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- jquery -->
+    <!-- fontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- fontAwesome -->
+  </head>
+  <body>
+    <header>
+      <div class="mainHeading">
+        <img
+          class="mainCover"
+          src="https://thriftynomads.com/wp-content/uploads/2018/07/Nine-Arches-Bridge.jpg"
+          alt=""
+        />
+        <div class="header-content">
+          <h2>Travel Guides</h2>
+          <div class="line"></div>
+          <h3>We have the best guides for your trip !</h3>
+        </div>
+      </div>
+      <nav id="navBarId" class="resNavBar navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../../index.html"
+            ><span style="font-size: 130%">Travel</span>
+            <span style="font-size: 130%; color: #ffa500">Ceylon</span></a
+          >
+          <button
+            onclick="changeColor()"
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-md-auto gap-2">
+              <li class="nav-item rounded">
+                <a class="nav-link active" href="../../AboutUs/index.html"
+                  >About us</a
+                >
+              </li>
+
+              <li class="navigationDropdown nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Explore
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../../Explore/Locations/Turism(215093L).html"
+                      >Locations</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#">People</a></li>
+
+                  <li>
+                    <a class="dropdown-item" href="#">History</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Goverment & Society</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Economy</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Cultural Life</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="navigationDropdown nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="../Packages/index.html"
+                      >Packages</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../Guides/index.html"
+                      >Tour Guides</a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="../Transportation/index.html"
+                      >Transportations</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Accommodation</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item rounded">
+                <a class="nav-link active" href="../../Feedback/tourism1.html"
+                  >Feedbacks</a
+                >
+              </li>
+              <li class="nav-item rounded">
+                <a
+                  class="nav-link active"
+                  href="../../ContactUs/Tourism 215070N.html"
+                  >Contact us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="testimonials">
+        <!--heading--->
+        <div class="testimonial-heading">
+          <h2>Our Travel Guides</h2>
+        </div>
+        <!--testimonials-box-container------>
+        <div class="testimonial-box-container">
+          <!--BOX-1-------------->
+          <div class="testimonial-box">
+            <!--top------------------------->
+            <div class="box-top">
+              <!--profile----->
+              <div class="profile">
+                <!--img---->
+                <div class="profile-img">
+                  <img
+                    src="https://w7.pngwing.com/pngs/799/987/png-transparent-computer-icons-avatar-social-media-blog-font-awesome-avatar-heroes-computer-wallpaper-social-media.png"
+                  />
+                </div>
+                <!--name-and-username-->
+                <div class="name-user">
+                  <strong>Buddhika Fernando</strong>
+                  <span>in Colombo</span>
+                </div>
+              </div>
+              <!--reviews------>
+              <div class="reviews">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i
+                ><!--Empty star-->
+              </div>
+            </div>
+            <!--Comments---------------------------------------->
+            <div class="client-comment">
+              <p>
+                I'm a freelance tour guide I have 25 year working experience. I
+                have been working in firm places in Sri Lanka like Aitken Spence
+                travels, walker's tours, Galle face hotel, Taj Samudra hotel and
+                a few more. I like to be a guide specially for clients who make
+                tailor-made tours. I specialize in tailor-made and customized
+                travel because these days many people prefer to travel
+                independently and create their own unique itinerary.
+              </p>
+            </div>
+
+            <button type="button" class="btn btn-success">
+              <i class="fa-solid fa-phone"></i>&nbsp;&nbsp; Call now
+            </button>
+            <button type="button" class="btn btn-primary">
+              <i class="fa-solid fa-message"></i>&nbsp;&nbsp; Send a message
+            </button>
+          </div>
+          <!--BOX-2-------------->
+          <div class="testimonial-box">
+            <!--top------------------------->
+            <div class="box-top">
+              <!--profile----->
+              <div class="profile">
+                <!--img---->
+                <div class="profile-img">
+                  <img
+                    src="https://mpng.subpng.com/20180504/phe/kisspng-professional-computer-icons-avatar-job-5aec571ec854c8.3222584415254382388206.jpg"
+                  />
+                </div>
+                <!--name-and-username-->
+                <div class="name-user">
+                  <strong>Julie Maya</strong>
+                  <span>in Galle</span>
+                </div>
+              </div>
+              <!--reviews------>
+              <div class="reviews">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i
+                ><!--Empty star-->
+              </div>
+            </div>
+            <!--Comments---------------------------------------->
+            <div class="client-comment">
+              <p>
+                Hi, my name is Julie ! I spend so much time being an explorer
+                and realize there are thousand of hidden gems have to offer. I
+                love traveling, yoga, hiking, nature, art. Walking along the
+                beach at sunset could definitely make my day.I can accompany
+                groups of visitors to tourist attractions, whether on day trips
+                or longer visits, and give them information and insights that
+                help them make the most of the experience.
+              </p>
+            </div>
+            <button type="button" class="btn btn-success">
+              <i class="fa-solid fa-phone"></i>&nbsp;&nbsp; Call now
+            </button>
+            <button type="button" class="btn btn-primary">
+              <i class="fa-solid fa-message"></i>&nbsp;&nbsp; Send a message
+            </button>
+          </div>
+          <!--BOX-3-------------->
+          <div class="testimonial-box">
+            <!--top------------------------->
+            <div class="box-top">
+              <!--profile----->
+              <div class="profile">
+                <!--img---->
+                <div class="profile-img">
+                  <img
+                    src="https://w7.pngwing.com/pngs/799/987/png-transparent-computer-icons-avatar-social-media-blog-font-awesome-avatar-heroes-computer-wallpaper-social-media.png"
+                  />
+                </div>
+                <!--name-and-username-->
+                <div class="name-user">
+                  <strong>Hasitha Nilupul</strong>
+                  <span>in Gampaha</span>
+                </div>
+              </div>
+              <!--reviews------>
+              <div class="reviews">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i
+                ><!--Empty star-->
+              </div>
+            </div>
+            <!--Comments---------------------------------------->
+            <div class="client-comment">
+              <p>
+                I live in Gampaha, and I am a guide on this beautiful island and
+                a part-time working as a translator. I have 10 years of
+                experience in tour guiding. I am also proficient in French and
+                Spanish.
+              </p>
+            </div>
+            <button type="button" class="btn btn-success">
+              <i class="fa-solid fa-phone"></i>&nbsp;&nbsp; Call now
+            </button>
+            <button type="button" class="btn btn-primary">
+              <i class="fa-solid fa-message"></i>&nbsp;&nbsp; Send a message
+            </button>
+          </div>
+          <!--BOX-4-------------->
+          <div class="testimonial-box">
+            <!--top------------------------->
+            <div class="box-top">
+              <!--profile----->
+              <div class="profile">
+                <!--img---->
+                <div class="profile-img">
+                  <img
+                    src="https://w7.pngwing.com/pngs/799/987/png-transparent-computer-icons-avatar-social-media-blog-font-awesome-avatar-heroes-computer-wallpaper-social-media.png"
+                  />
+                </div>
+                <!--name-and-username-->
+                <div class="name-user">
+                  <strong>Pasindu Sandaruwan</strong>
+                  <span>in Kandy</span>
+                </div>
+              </div>
+              <!--reviews------>
+              <div class="reviews">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i
+                ><!--Empty star-->
+              </div>
+            </div>
+            <!--Comments---------------------------------------->
+            <div class="client-comment">
+              <p>
+                I am a certified tour guide and travel planner as well as an
+                expert in zoology. I have been working for the last 7 years for
+                some reputed clients around the world through my tour guiding.
+                My knowledge of trip planning is meant to guide you through the
+                basic rules and beneficial strategies that can help you to enjoy
+                your trip.
+              </p>
+            </div>
+            <button type="button" class="btn btn-success">
+              <i class="fa-solid fa-phone"></i>&nbsp;&nbsp; Call now
+            </button>
+            <button type="button" class="btn btn-primary">
+              <i class="fa-solid fa-message"></i>&nbsp;&nbsp; Send a message
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <button
+      onclick='window.scrollTo({top: 0, behavior: "smooth"});'
+      id="topButton"
+    >
+      <i class="fa-solid fa-circle-arrow-up"></i>
+    </button>
+
+    <footer>
+      <div class="text-white" style="background-color: #1363df">
+        <p class="text-center p-4 m-0">Footer Content</p>
+      </div>
+    </footer>
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          var scroll = $(window).scrollTop();
+          if (scroll > 50) {
+            $(".resNavBar").css("background", "#1363DF");
+            $(".resNavBar").css(
+              "box-shadow",
+              "0px 10px 13px -7px #000000, 0px 21px 14px 1px rgba(0,0,0,0.04)"
+            );
+          } else {
+            $(".resNavBar").css("background", "transparent");
+            $(".resNavBar").css(
+              "box-shadow",
+              "0px 0 0 0 transparent, 0px 0 0 1px transparent"
+            );
+          }
+        });
+      });
+
+      function changeColor() {
+        document.getElementById("navBarId").style.backgroundColor = "#1363DF";
+        document.getElementById("navBarId").style.boxShadow =
+          "0px 10px 13px -7px #000000, 0px 21px 14px 1px rgba(0,0,0,0.04)";
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

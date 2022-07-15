@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  background-color: #dff6ff !important;
+}
+
+.line {
+  width: 150px;
+  height: 4px;
+  background: #fc036b;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+section {
+  width: 80%;
+  margin: 80px auto 0px auto;
+}
+
+/*header*/
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://images.pexels.com/photos/7400676/pexels-photo-7400676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.cultural {
+  margin-top: 250px;
+  color: whitesmoke;
+  text-align: center;
+  margin-left: 2%;
+}
+
+.cultural h2 {
+  font-size: 13vmin;
+  font-weight: 650;
+}
+
+/*header*/
+/* Navbar */
+
+.navbar-brand {
+  font-size: 2rem !important;
+  font-weight: bold;
+}
+.navbar {
+  font-weight: bold;
+}
+.navigationDropdown ul {
+  background-color: #1363df;
+  border: 1px solid white;
+  text-align: center;
+}
+.navigationDropdown a {
+  color: white;
+}
+.navigationDropdown a:hover {
+  color: white;
+  background-color: #0d4599;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    0px 1px 28px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 13px -7px #000000, 0px 1px 28px 6px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid white;
+
+  border: 1px solid white;
+}
+
+.navbar-nav .nav-item:hover {
+  background-color: #0d4599;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    0px 1px 28px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 13px -7px #000000, 0px 1px 28px 6px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid white;
+}
+.nav-item {
+  font-size: 1.3rem;
+}
+.nav-item .nav-link {
+  border-bottom: 1px solid white;
+}
+nav {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+.resNavBar {
+  background-color: transparent;
+}
+
+/* Navbar */
+/*ecultural discription*/
+.cultural-dis {
+  text-align: center;
+  font-size: 5vmin;
+  color: #2f3640;
+}
+
+.cultural-dis p {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 3vmin;
+  text-align: justify;
+}
+
+/*cultural discription*/
+
+/*The arts*/
+.the-arts {
+  text-align: center;
+  font-size: 5vmin;
+  color: #2f3640;
+}
+
+.the-arts p {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 3vmin;
+  text-align: justify;
+}
+/*The arts*/
+
+/*cultural-institutions*/
+.cultural-institutions {
+  text-align: center;
+  font-size: 5vmin;
+  color: #2f3640;
+}
+
+.cultural-institutions p {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 3vmin;
+  text-align: justify;
+}
+/*cultural-institutions*/
+
+/*recreation*/
+.recreation {
+  text-align: center;
+  font-size: 5vmin;
+  color: #2f3640;
+}
+
+.recreation p {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 3vmin;
+  text-align: justify;
+}
+/*recreation*/
+
+/*press-and-broadcasting*/
+.press-and-broadcasting {
+  text-align: center;
+  font-size: 5vmin;
+  color: #2f3640;
+}
+
+.press-and-broadcasting p {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 3vmin;
+  text-align: justify;
+}
+/*press-and-broadcasting*/
+
+/* slider */
+.carousel img {
+  height: 80vh;
+  width: 65%;
+}
+.carousel {
+  margin: 0 auto;
+  width: 65%;
+}
+/* slider */

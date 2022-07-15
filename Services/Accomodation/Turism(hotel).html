@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- bootstrap -->
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- jquery -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <style>
+    body {
+      font-family: "roboto", sans-serif;
+      background-color: #dff6ff;
+    }
+    /* Navbar */
+    nav {
+      -webkit-box-shadow: 0px 10px 13px -7px #000000,
+        0px 1px 28px 6px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 10px 13px -7px #000000,
+        0px 1px 28px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar-brand {
+      font-size: 2rem !important;
+      font-weight: bold;
+    }
+    .navbar {
+      font-weight: bold;
+    }
+    .navigationDropdown ul {
+      background-color: #1363df;
+      border: 1px solid white;
+      text-align: center;
+    }
+    .navigationDropdown a {
+      color: white;
+    }
+    .navigationDropdown a:hover {
+      color: white;
+      background-color: #0d4599;
+      -webkit-box-shadow: 0px 10px 13px -7px #000000,
+        0px 1px 28px 6px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 10px 13px -7px #000000,
+        0px 1px 28px 6px rgba(0, 0, 0, 0.2);
+      border-bottom: 1px solid white;
+
+      border: 1px solid white;
+    }
+
+    .navbar-nav .nav-item:hover {
+      background-color: #0d4599;
+      -webkit-box-shadow: 0px 10px 13px -7px #000000,
+        0px 1px 28px 6px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 10px 13px -7px #000000,
+        0px 1px 28px 6px rgba(0, 0, 0, 0.2);
+      border-bottom: 1px solid white;
+    }
+    .nav-item {
+      font-size: 1.3rem;
+    }
+    .nav-item .nav-link {
+      border-bottom: 1px solid white;
+    }
+    nav {
+      position: fixed !important;
+      top: 0;
+      width: 100%;
+      z-index: 99;
+    }
+    .resNavBar {
+      background-color: transparent;
+    }
+
+    /* Navbar */
+    h2 {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 4.5rem;
+      font-weight: 80%;
+      text-align: center;
+      padding-top: 5%;
+      color: aliceblue;
+    }
+    #H2 {
+      background-image: url(https://img.freepik.com/free-photo/sri-lanka-tea-estates-nuwara-eliya_114775-48.jpg?w=2000);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center left;
+      min-height: 270px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    h3 {
+      font-size: 2.8rem;
+      font-weight: bold;
+    }
+    .location {
+      padding-left: 18%;
+      padding-top: 2%;
+    }
+
+    .cardPosition {
+      position: absolute;
+      top: 140%;
+      left: 10%;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 1.5rem;
+      font-weight: 40px;
+    }
+
+    h5 {
+      font-size: 2rem;
+    }
+
+    .rupees {
+      font-size: 2.5rem;
+    }
+    iframe {
+      padding-bottom: 5%;
+    }
+
+    .ftr {
+      background-image: url(https://miro.medium.com/max/1200/1*x-NJGsBGitBzR-KlEyX3xQ.jpeg);
+      color: #06283d;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center left;
+      min-height: 250px;
+      text-align: center;
+      padding: 150px;
+      margin-top: 500%;
+    }
+    .card {
+      padding-bottom: 10px;
+    }
+
+    .card:hover {
+      -webkit-box-shadow: -2px 4px 18px 0px rgba(0, 0, 0, 0.53);
+      box-shadow: -2px 4px 18px 0px rgba(0, 0, 0, 0.53);
+    }
+  </style>
+  <body>
+    <header style="padding-bottom: 80px">
+      <nav
+        style="background-color: #1363df"
+        id="navBarId"
+        class="resNavBar navbar navbar-expand-lg navbar-dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../../index.html"
+            ><span style="font-size: 130%">Travel</span>
+            <span style="font-size: 130%; color: #ffa500">Ceylon</span></a
+          >
+          <button
+            onclick="changeColor()"
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-md-auto gap-2">
+              <li class="nav-item rounded">
+                <a class="nav-link active" href="../../AboutUs/index.html"
+                  >About us</a
+                >
+              </li>
+
+              <li class="navigationDropdown nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Explore
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../../Explore/Locations/Turism(215093L).html"
+                      >Locations</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../../Explore/people/people.html"
+                      >People</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../../Explore/History/history.html"
+                      >History</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../../Explore/goverment and society/government.html"
+                      >Goverment & Society</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../../Explore/economy/economy.html"
+                      >Economy</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../../Explore/cultural life/cultural.html"
+                      >Cultural Life</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="navigationDropdown nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="../Packages/index.html"
+                      >Packages</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../Guides/index.html"
+                      >Tour Guides</a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="../Transportation/index.html"
+                      >Transportations</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../Accomodation/Turism(hotel).html"
+                      >Accommodation</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item rounded">
+                <a class="nav-link active" href="../../Feedback/feedback.html"
+                  >Feedbacks</a
+                >
+              </li>
+              <li class="nav-item rounded">
+                <a
+                  class="nav-link active"
+                  href="../../ContactUs/ceylon travel.html"
+                  >Contact us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <h2 id="H2">
+      <marquee direction="right">Sri Lanka Hotels and Places to Stay</marquee>
+    </h2>
+    <h3><marquee>Popular hotels in Sri Lanka right now</marquee></h3>
+
+    <div class="location">
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://www.oakbaybeachhotel.com/wp-content/uploads/2022/03/demo-relax.jpg"
+              class="d-block"
+              alt="hotel1"
+              width="80%"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://www.manorhouseconcepts.com/wp-content/uploads/2020/11/home5.jpg"
+              class="d-block"
+              alt="hotel1"
+              width="85%"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://nexttravelsrilanka.com/wp-content/uploads/2021/05/A-young-tourist-girl-enjoying-the-beauty-of-Nuwara-Eliya-the-Fascinating-Misty-Mountain-Town-of-Sri-Lanka.jpg"
+              class="d-block"
+              alt="hotel3"
+              width="80%"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="cardPosition">
+      <div class="card mb-3" style="max-width: 1200px">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="https://pix10.agoda.net/hotelImages/59736/-1/db24ed8c2fb70109ec687e5c8e39a43e.jpg?ca=0&ce=1&s=1024x768"
+              class="img-fluid rounded-start"
+              alt="hotel4"
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">
+                <a
+                  href="https://www.tripadvisor.com/Hotel_Review-g293962-d597086-Reviews-Cinnamon_Grand_Colombo-Colombo_Western_Province.html"
+                  target="_blank"
+                  >1.Cinnamon Grand Colombo</a
+                >
+              </h5>
+              <p class="card-text">
+                <small class="text-muted"
+                  >11,715 reviews<br />#1 Best Value of 3,048 places to stay in
+                  Sri Lanka<br /></small
+                ><img
+                  src="https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?ixlib=rb-1.2.1&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb"
+                  class="img-circle"
+                  width="20px"
+                  height="20px"
+                />
+                By <b>M Rifnaz</b><br />
+                "Awesome place and excellent service had a great evening at
+                shisha lounge at <b>pool</b> side and enjoyed the food and
+                drinks awesome world cup offers for drink and a excellent
+                service fromn there staffs thank you Priyada... "<br /><b
+                  class="rupees"
+                  >LKR 46,884</b
+                >
+              </p>
+              <p class="card-text">
+                <small class="text-muted"
+                  ><a
+                    href="https://www.tripadvisor.com/Hotel_Review-g293962-d597086-Reviews-Cinnamon_Grand_Colombo-Colombo_Western_Province.html"
+                    target="_blank"
+                    >We comared the lowest prices from 3 websites</a
+                  ></small
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.7697366949496!2d79.84655141477285!3d6.918108995001421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25940ed9b9633%3A0xb0658168859e3c0e!2sCinnamon%20Grand%20Colombo!5e0!3m2!1sen!2slk!4v1657822669254!5m2!1sen!2slk"
+        width="800"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+
+      <div class="card mb-3" style="max-width: 1200px">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="https://www.dailynews.lk/sites/default/files/news/2019/04/24/z_pi-Kingsbury.jpg"
+              class="img-fluid rounded-start"
+              alt="hotel5"
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">
+                <a
+                  href="https://www.tripadvisor.com/Hotel_Review-g293962-d3801214-Reviews-The_Kingsbury_Hotel-Colombo_Western_Province.html"
+                  target="_blank"
+                  >2.Kingsbury Hotel</a
+                >
+              </h5>
+              <p class="card-text">
+                <small class="text-muted"
+                  >3,686 reviews<br />#2 Best Value of 3,048 places to stay in
+                  Sri Lanka<br /></small
+                ><img
+                  src="https://cdn.britannica.com/42/94542-050-5C6B2249/Pyramids-Cairo-Giza-plateau.jpg"
+                  class="img-circle"
+                  width="20px"
+                  height="20px"
+                />
+                By <b>Induwara Illukpitiya</b><br />
+                "One of the best spot to have a beautiful dinner with you love
+                ones Thank you Priyadharshne Amazing place "<br /><b
+                  class="rupees"
+                  >LKR 30,425</b
+                >
+              </p>
+              <p class="card-text">
+                <small class="text-muted"
+                  ><a
+                    href="https://www.tripadvisor.com/Hotel_Review-g293962-d597086-Reviews-Cinnamon_Grand_Colombo-Colombo_Western_Province.html"
+                    target="_blank"
+                    >We comared the lowest prices from 5 websites</a
+                  ></small
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.6459390783366!2d79.8419406!3d6.9328529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae259259a6157fb%3A0x8c0cebb288af4419!2sThe%20Kingsbury%20Colombo!5e0!3m2!1sen!2slk!4v1657823019510!5m2!1sen!2slk"
+        width="800"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+
+      <div class="card mb-3" style="max-width: 1200px">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/112518658.jpg?k=7dadb5b4e31e433f4e8c725968a1bfdcb0becf3a3eea33b9e9f205c368436e5b&o=&hp=1"
+              class="img-fluid rounded-start"
+              alt="hotel5"
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">
+                <a
+                  href="https://www.tripadvisor.com/Hotel_Review-g293962-d456049-Reviews-Cinnamon_Lakeside_Colombo-Colombo_Western_Province.html"
+                  target="_blank"
+                  >3.Cinnamon Lakeside Colombo</a
+                >
+              </h5>
+              <p class="card-text">
+                <small class="text-muted"
+                  >6,137 reviews<br />#3 Best Value of 3,048 places to stay in
+                  Sri Lanka<br /></small
+                ><img
+                  src="https://mobimg.b-cdn.net/v3/fetch/43/43ef330e04446e202e2e94375b2b9428.jpeg"
+                  class="img-circle"
+                  width="20px"
+                  height="20px"
+                />
+                By <b>Lii</b><br />
+                "first of all thanks to jayani for giving a great service in the
+                front office...we are here for 8 days and very comfortable
+                stay... thank you for
+                <b>clean and comfortable rooms...</b> highly recommend cinnamon
+                lakeside... "<br /><b class="rupees">LKR 32,291</b>
+              </p>
+              <p class="card-text">
+                <small class="text-muted"
+                  ><a
+                    href="https://www.tripadvisor.com/Hotel_Review-g293962-d456049-Reviews-Cinnamon_Lakeside_Colombo-Colombo_Western_Province.html"
+                    target="_blank"
+                    >We comared the lowest prices from 6 websites</a
+                  ></small
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.676883866568!2d79.84929620000004!3d6.929170400000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2593d26d456bf%3A0x972513b2d44939c8!2sCinnamon%20Lakeside%20Colombo!5e0!3m2!1sen!2slk!4v1657823217477!5m2!1sen!2slk"
+        width="800"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+
+      <div class="card mb-3" style="max-width: 1200px">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="https://pix10.agoda.net/hotelImages/251/251545/251545_15052817530027956494.jpg?ca=4&ce=1&s=1024x768"
+              class="img-fluid rounded-start"
+              alt="hotel5"
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">
+                <a
+                  href="https://www.tripadvisor.com/Hotel_Review-g304134-d579245-Reviews-Hikka_Tranz_by_Cinnamon-Hikkaduwa_Galle_District_Southern_Province.html"
+                  target="_blank"
+                  >4.Hikka Tranz by Cinnamon</a
+                >
+              </h5>
+              <p class="card-text">
+                <small class="text-muted"
+                  >2,768 reviews<br />#4 Best Value of 3,048 places to stay in
+                  Sri Lanka<br /></small
+                ><img
+                  src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg"
+                  class="img-circle"
+                  width="20px"
+                  height="20px"
+                />
+                By <b>Sam K</b><br />
+                "This hotel place in nice environment, very good for
+                kids..specially kids pool and able to enjoy
+                <b>beach..</b>Fabulous staff ,whom really helpful and take care
+                of all details and excellent food with massive variety !"<br /><b
+                  class="rupees"
+                  >LKR 37,723</b
+                >
+              </p>
+              <p class="card-text">
+                <small class="text-muted"
+                  ><a
+                    href="https://www.tripadvisor.com/Hotel_Review-g304134-d579245-Reviews-Hikka_Tranz_by_Cinnamon-Hikkaduwa_Galle_District_Southern_Province.html"
+                    target="_blank"
+                    >We comared the lowest prices from 6 websites</a
+                  ></small
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.994130365138!2d80.10089930000002!3d6.1314897999999936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae177c29a083ff9%3A0x25a5227872aff8a7!2sHikka%20Tranz%20by%20Cinnamon!5e0!3m2!1sen!2slk!4v1657823613639!5m2!1sen!2slk"
+        width="800"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+
+      <div class="card mb-3" style="max-width: 1200px">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/1b/58/f9/poolside.jpg?w=900&h=-1&s=1"
+              class="img-fluid rounded-start"
+              alt="hotel5"
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">
+                <a
+                  href="https://www.tripadvisor.com/Hotel_Review-g612380-d12553294-Reviews-Weligama_Bay_Marriott_Resort_Spa-Weligama_Matara_Southern_Province.html"
+                  target="_blank"
+                  >5.Weligama Bay Marriot Resort & Spa</a
+                >
+              </h5>
+              <p class="card-text">
+                <small class="text-muted"
+                  >1,743 reviews<br />#5 Best Value of 3,048 places to stay in
+                  Sri Lanka<br /></small
+                ><img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkhxwXCkLgEr1QdYP6USNqVwrSge0Co_0BWg&usqp=CAU"
+                  class="img-circle"
+                  width="20px"
+                  height="20px"
+                />
+                By <b>Odyssey543977</b><br />
+                "...very well welcomed, check in was made smoothly ,the room was
+                exactly as photos ,very spacious and <b>modern </b>with all
+                needed facilities ,view from the balcony is breathtaking ,the
+                food at the buffet with a lot..."<br /><b class="rupees"
+                  >LKR 50,084</b
+                >
+              </p>
+              <p class="card-text">
+                <small class="text-muted"
+                  ><a
+                    href="https://www.tripadvisor.com/Hotel_Review-g612380-d12553294-Reviews-Weligama_Bay_Marriott_Resort_Spa-Weligama_Matara_Southern_Province.html"
+                    target="_blank"
+                    >We comared the lowest prices from 6 websites</a
+                  ></small
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3968.1584486663965!2d80.4389922!3d5.972905999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae11545eda17fd9%3A0xe4d7ca849dbecbbe!2sWeligama%20Bay%20Marriott%20Resort%20%26%20Spa!5e0!3m2!1sen!2slk!4v1657823870668!5m2!1sen!2slk"
+        width="800"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+
+      <div class="card mb-3" style="max-width: 1200px">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="https://media-cdn.tripadvisor.com/media/photo-s/22/28/6e/c4/hotel-goldi-sands.jpg"
+              class="img-fluid rounded-start"
+              alt="hotel5"
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">
+                <a
+                  href="https://www.tripadvisor.com/Hotel_Review-g297897-d316666-Reviews-Hotel_Goldi_Sands-Negombo_Western_Province.html"
+                  target="_blank"
+                  >6.Hotel Goldi Sands</a
+                >
+              </h5>
+              <p class="card-text">
+                <small class="text-muted"
+                  >1,316 reviews<br />#6 Best Value of 3,048 places to stay in
+                  Sri Lanka<br /></small
+                ><img
+                  src="https://www.kkcollection.com/wp-content/uploads/2021/03/KK-Beach-6.jpg"
+                  class="img-circle"
+                  width="20px"
+                  height="20px"
+                />
+                By <b>My family holidays.</b><br />
+                "Enjoyed days around the pool and beach and when you step
+                outside the hotel you have an abundance of
+                <b>shaps restaurants and bars</b> loved every minute we had room
+                111 with a very large balcony."<br /><b class="rupees"
+                  >LKR 43,471</b
+                >
+              </p>
+              <p class="card-text">
+                <small class="text-muted"
+                  ><a
+                    href="https://www.tripadvisor.com/Hotel_Review-g297897-d316666-Reviews-Hotel_Goldi_Sands-Negombo_Western_Province.html"
+                    target="_blank"
+                    >We comared the lowest prices from 4 websites</a
+                  ></small
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.960742649936!2d79.84192209999999!3d7.245307899999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2e91665d059c1%3A0x86af04b0b8bf5ef4!2sGoldi%20Sands%20Hotel!5e0!3m2!1sen!2slk!4v1657823939211!5m2!1sen!2slk"
+        width="800"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+
+      <div class="card mb-3" style="max-width: 1200px">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/247098300.jpg?k=2b256778d9653609623b2f151c0d9207b821c6c77df7eadfb0523bef3b5d7407&o=&hp=1"
+              class="img-fluid rounded-start"
+              alt="hotel5"
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">
+                <a
+                  href="https://www.tripadvisor.com/Hotel_Review-g293962-d13160059-Reviews-ME_Colombo-Colombo_Western_Province.html"
+                  target="_blank"
+                  >7.ME Colombo</a
+                >
+              </h5>
+              <p class="card-text">
+                <small class="text-muted"
+                  >671 reviews<br />#7 Best Value of 3,048 places to stay in Sri
+                  Lanka<br /></small
+                ><img
+                  src="https://images.unsplash.com/photo-1616036740257-9449ea1f6605?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3VuJTIwc2V0fGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+                  class="img-circle"
+                  width="20px"
+                  height="20px"
+                />
+                By <b>Thinuri L</b><br />
+                "We really enjoyed the food and the service was really perfect
+                staff are so helpful and accommodating.. perfect location to
+                hangout eith a friend and the view of <b>rooftop bar</b> are so
+                relaxing and it's the best pl..."<br /><b class="rupees"
+                  >LKR 19,347</b
+                >
+              </p>
+              <p class="card-text">
+                <small class="text-muted"
+                  ><a
+                    href="https://www.tripadvisor.com/Hotel_Review-g293962-d13160059-Reviews-ME_Colombo-Colombo_Western_Province.html"
+                    target="_blank"
+                    >We comared the lowest prices from 3 websites</a
+                  ></small
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.0414963551552!2d79.8682515!3d6.885633100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25bcef3873279%3A0xe908dfefba696056!2sME%20Colombo!5e0!3m2!1sen!2slk!4v1657824106341!5m2!1sen!2slk"
+        width="800"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+
+      <div class="card mb-3" style="max-width: 1200px">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="https://media-cdn.tripadvisor.com/media/photo-s/14/d4/81/ed/marino-beach.jpg"
+              class="img-fluid rounded-start"
+              alt="hotel5"
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">
+                <a
+                  href="https://www.tripadvisor.com/Hotel_Review-g293962-d14106301-Reviews-Marino_Beach_Colombo-Colombo_Western_Province.html"
+                  target="_blank"
+                  >8.Marino Beach Colombo
+                </a>
+              </h5>
+              <p class="card-text">
+                <small class="text-muted"
+                  >1,098 reviews<br />#8 Best Value of 3,048 places to stay in
+                  Sri Lanka<br /></small
+                ><img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp97wKCeZJSsmNiobFRo7kNkzNT9X6FCBxDA&usqp=CAU"
+                  class="img-circle"
+                  width="20px"
+                  height="20px"
+                />
+                By <b>Sunshinetravels</b><br />
+                "The best bit is definitely the <b>pool..</b> infinity pool with
+                lovely views and the garden bar serves amazing cocktails and
+                fresh coconut right to your sun bed! Best bit was that a pina
+                colada only worked out to be &#163;2.3.."<br /><b class="rupees"
+                  >LKR 23,419</b
+                >
+              </p>
+              <p class="card-text">
+                <small class="text-muted"
+                  ><a
+                    href="https://www.tripadvisor.com/Hotel_Review-g293962-d14106301-Reviews-Marino_Beach_Colombo-Colombo_Western_Province.html"
+                    target="_blank"
+                    >We comared the lowest prices from 5 websites</a
+                  ></small
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.9225096614678!2d79.85150709999999!3d6.899871000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2595fdbd5dd21%3A0x3a6aea27ffd9bc52!2sMarino%20Beach%20Colombo!5e0!3m2!1sen!2slk!4v1657824160515!5m2!1sen!2slk"
+        width="800"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+
+      <div class="card mb-3" style="max-width: 1200px">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="https://cf.bstatic.com/xdata/images/hotel/max500/64690425.jpg?k=adf9d8bde18c1032773a445b3cd8d1fdda9de7cbd294e0115f3b7c705358f19e&o=&hp=1"
+              class="img-fluid rounded-start"
+              alt="hotel5"
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">
+                <a
+                  href="https://www.tripadvisor.com/Hotel_Review-g304142-d8116054-Reviews-Anantara_Peace_Haven_Tangalle_Resort-Tangalle_Southern_Province.html"
+                  target="_blank"
+                  >9.Anantara Peace Haven Tangalle Resort
+                </a>
+              </h5>
+              <p class="card-text">
+                <small class="text-muted"
+                  >3,512 reviews<br />#9 Best Value of 3,048 places to stay in
+                  Sri Lanka<br /></small
+                ><img
+                  src="https://media.istockphoto.com/photos/positive-man-celebrating-success-picture-id1221837116?k=20&m=1221837116&s=612x612&w=0&h=HfTeaCWySduic6zF3kC-jGjWq_JgQUc5BtBjdCzBQzU="
+                  class="img-circle"
+                  width="20px"
+                  height="20px"
+                />
+                By <b>Murshida Iqbal AKA Mrs.Hussain</b><br />
+                "..any ..thing..it's an amazing property full of thriving wild
+                life...cute peacocks arround:)...<b>Beach villas</b> were the
+                best decision we took ..Waking up to that magnificent view was
+                breathtaking and loved eve..."<br /><b class="rupees"
+                  >LKR 72,927</b
+                >
+              </p>
+              <p class="card-text">
+                <small class="text-muted"
+                  ><a
+                    href="https://www.tripadvisor.com/Hotel_Review-g304142-d8116054-Reviews-Anantara_Peace_Haven_Tangalle_Resort-Tangalle_Southern_Province.html"
+                    target="_blank"
+                    >We comared the lowest prices from 7 websites</a
+                  ></small
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.8707668099223!2d80.78386909999999!3d6.0124768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae14aeca9321a0d%3A0x3fa1b73e2f49fb36!2sAnantara%20Peace%20Haven%20Tangalle%20Resort!5e0!3m2!1sen!2slk!4v1657824240099!5m2!1sen!2slk"
+        width="800"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+
+      <div class="card mb-3" style="max-width: 1200px">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/28248067.jpg?k=e89b6e64f712b8d5b9a9375b5ae2bbaab91d49b2d23a24dded4e1448e26559fc&o=&hp=1"
+              class="img-fluid rounded-start"
+              alt="hotel5"
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">
+                <a
+                  href="https://www.tripadvisor.com/Hotel_Review-g304138-d5566703-Reviews-Earl_s_Regent_Hotel-Kandy_Kandy_District_Central_Province.html"
+                  target="_blank"
+                  >10.Earl's Regent Hotel</a
+                >
+              </h5>
+              <p class="card-text">
+                <small class="text-muted"
+                  >1,456 reviews<br />#10 Best Value of 3,048 places to stay in
+                  Sri Lanka<br /></small
+                ><img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvYiv7ErATmUBU0hcNQM42nbOcGJ9tPvWRWg&usqp=CAU"
+                  class="img-circle"
+                  width="20px"
+                  height="20px"
+                />
+                By <b>BrooksieG</b><br />
+                "It was very comfortable and quiet with its own small verandah
+                on which on to enjoy a <b>quiet</b>glass of wine."<br /><b
+                  class="rupees"
+                  >LKR 14,455</b
+                >
+              </p>
+              <p class="card-text">
+                <small class="text-muted"
+                  ><a
+                    href="https://www.tripadvisor.com/Hotel_Review-g304138-d5566703-Reviews-Earl_s_Regent_Hotel-Kandy_Kandy_District_Central_Province.html"
+                    target="_blank"
+                    >We comared the lowest prices from 7 websites</a
+                  ></small
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.6274384575927!2d80.6100986!3d7.283161499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae368ea3846c84f%3A0x87028b1acec787d!2sEarl&#39;s%20Regent%20Hotel!5e0!3m2!1sen!2slk!4v1657824307266!5m2!1sen!2slk"
+        width="800"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+    <script>
+      let year = new Date().getFullYear();
+      document.getElementById("year").innerHTML = year;
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

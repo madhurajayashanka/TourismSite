@@ -22,3 +22,6 @@ function changeColor() {
   document.getElementById("navBarId").style.boxShadow =
     "0px 10px 13px -7px #000000, 0px 21px 14px 1px rgba(0,0,0,0.04)";
 }
+
+let year = new Date().getFullYear();
+document.getElementById("year").innerHTML = year;

@@ -29,7 +29,24 @@ header {
 }
 .navbar {
   font-weight: bold;
-  width: 100vw !important;
+}
+.navigationDropdown ul {
+  background-color: #1363df;
+  border: 1px solid white;
+  text-align: center;
+}
+.navigationDropdown a {
+  color: white;
+}
+.navigationDropdown a:hover {
+  color: white;
+  background-color: #0d4599;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    0px 1px 28px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 13px -7px #000000, 0px 1px 28px 6px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid white;
+
+  border: 1px solid white;
 }
 
 .navbar-nav .nav-item:hover {
@@ -55,22 +72,167 @@ nav {
   background-color: transparent;
 }
 
-.navigationDropdown ul {
-  background-color: #1363df;
-}
-.navigationDropdown a {
-  color: white;
-}
-.navigationDropdown a:hover {
-  color: white;
-  background-color: #0d4599;
-  -webkit-box-shadow: 0px 10px 13px -7px #000000,
-    0px 1px 28px 6px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 10px 13px -7px #000000, 0px 1px 28px 6px rgba(0, 0, 0, 0.2);
-  border-bottom: 1px solid white;
+/* Navbar */
+
+.header-content {
+  margin-top: 200px;
+  color: whitesmoke;
+  text-align: center;
 }
 
-/* Navbar */
+.header-content h3 {
+  font-size: 4vmin;
+  font-weight: 400;
+}
+
+.line {
+  width: 150px;
+  height: 4px;
+  background: #fc036b;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.header-content h2 {
+  font-size: 13vmin;
+  font-weight: 650;
+}
+
+.dis p {
+  margin: 30px 30px;
+  padding: 10px 10px;
+  color: black;
+  font-weight: bold;
+  font-size: 3vmin;
+}
+
+/* Land of Sri Lanka */
+section {
+  width: 80%;
+  margin: 80px auto 0px auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 5vmin;
+  color: #2f3640;
+}
+
+.title p {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 3vmin;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Land of Sri Lanka */
+
+/*drainage*/
+.drainage {
+  text-align: center;
+  font-size: 5vmin;
+  color: #2f3640;
+}
+.drainage p {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 3vmin;
+  align-items: center;
+  justify-content: center;
+}
+/*drainage*/
+
+/*soils*/
+.soils {
+  text-align: center;
+  font-size: 5vmin;
+  color: #2f3640;
+}
+.soils p {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 3vmin;
+  align-items: center;
+  justify-content: center;
+}
+/*soils*/
+
+/*climate*/
+.climate {
+  text-align: center;
+  font-size: 5vmin;
+  color: #2f3640;
+}
+.climate p {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 3vmin;
+  align-items: center;
+  justify-content: center;
+}
+/*climate*/
+
+/*plants*/
+.plants {
+  text-align: center;
+  font-size: 5vmin;
+  color: #2f3640;
+}
+.plants p {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 3vmin;
+  align-items: center;
+  justify-content: center;
+}
+/*plants*/
+
+/*Explore Sri Lanka*/
+.explore {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://cdn.pixabay.com/photo/2021/02/02/18/59/temple-5974937_1280.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.explore-Srilanka {
+  width: 40%;
+  margin-top: 25%;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: whitesmoke;
+}
+
+.explore-Srilanka h2 {
+  font-size: 9vmin;
+}
+
+.explore-Srilanka line {
+  margin-bottom: 50px;
+}
+
+.ctn {
+  padding: 8px 15px;
+  margin: 20px 20px;
+  background: #fc036b;
+  border-radius: 20px;
+  color: whitesmoke;
+}
+
+.header-content p {
+  color: rgb(221, 221, 221);
+}
+
+.explore-Srilanka ctn {
+  margin-top: 40px;
+}
 
 /* topButton */
 #topButton {
@@ -125,106 +287,6 @@ nav {
   -moz-animation-name: bounce;
 }
 /* topButton */
-
-.header-content {
-  margin-top: 200px;
-  color: whitesmoke;
-  text-align: center;
-}
-
-.header-content h3 {
-  font-size: 4vmin;
-  font-weight: 68px;
-}
-
-.line {
-  width: 150px;
-  height: 4px;
-  background: #fc036b;
-  margin: 10px auto;
-  border-radius: 5px;
-}
-
-.header-content h2 {
-  font-size: 13vmin;
-  font-weight: 70px;
-}
-
-.dis p {
-  margin: 30px 30px;
-  padding: 10px 10px;
-  color: black;
-  font-weight: bold;
-  font-size: 3vmin;
-}
-
-/* Land of Sri Lanka */
-section {
-  width: 80%;
-  margin: 80px auto 0px auto;
-}
-
-.title {
-  text-align: center;
-  font-size: 5vmin;
-  color: #2f3640;
-}
-
-.title p {
-  margin-top: 30px;
-  font-weight: bold;
-  font-size: 4vmin;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Land of Sri Lanka */
-
-/*Explore Sri Lanka*/
-.explore {
-  width: 100%;
-  height: 100vh;
-  background-image: url("https://cdn.pixabay.com/photo/2021/02/02/18/59/temple-5974937_1280.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-}
-
-.explore-Srilanka {
-  width: 40%;
-  margin-top: 25%;
-  margin-left: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: whitesmoke;
-}
-
-.explore-Srilanka h2 {
-  font-size: 9vmin;
-}
-
-.explore-Srilanka line {
-  margin-bottom: 50px;
-}
-
-.ctn {
-  padding: 8px 15px;
-  margin: 20px 20px;
-  background: #fc036b;
-  border-radius: 20px;
-  color: whitesmoke;
-}
-
-.header-content p {
-  color: rgb(221, 221, 221);
-}
-
-.explore-Srilanka ctn {
-  margin-top: 40px;
-}
 
 /*Explore Sri Lanka*/
 

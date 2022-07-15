@@ -35,6 +35,12 @@
       text-align: left;
     }
     /* Navbar */
+    nav {
+      -webkit-box-shadow: 0px 10px 13px -7px #000000,
+        0px 1px 28px 6px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 10px 13px -7px #000000,
+        0px 1px 28px 6px rgba(0, 0, 0, 0.2);
+    }
 
     .navbar-brand {
       font-size: 2rem !important;
@@ -42,7 +48,25 @@
     }
     .navbar {
       font-weight: bold;
-      width: 100vw !important;
+    }
+    .navigationDropdown ul {
+      background-color: #1363df;
+      border: 1px solid white;
+      text-align: center;
+    }
+    .navigationDropdown a {
+      color: white;
+    }
+    .navigationDropdown a:hover {
+      color: white;
+      background-color: #0d4599;
+      -webkit-box-shadow: 0px 10px 13px -7px #000000,
+        0px 1px 28px 6px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 10px 13px -7px #000000,
+        0px 1px 28px 6px rgba(0, 0, 0, 0.2);
+      border-bottom: 1px solid white;
+
+      border: 1px solid white;
     }
 
     .navbar-nav .nav-item:hover {
@@ -67,22 +91,6 @@
     }
     .resNavBar {
       background-color: transparent;
-    }
-
-    .navigationDropdown ul {
-      background-color: #1363df;
-    }
-    .navigationDropdown a {
-      color: white;
-    }
-    .navigationDropdown a:hover {
-      color: white;
-      background-color: #0d4599;
-      -webkit-box-shadow: 0px 10px 13px -7px #000000,
-        0px 1px 28px 6px rgba(0, 0, 0, 0.2);
-      box-shadow: 0px 10px 13px -7px #000000,
-        0px 1px 28px 6px rgba(0, 0, 0, 0.2);
-      border-bottom: 1px solid white;
     }
 
     /* Navbar */
@@ -151,7 +159,8 @@
       margin-bottom: 30px;
       text-align: center;
       padding-top: 10%;
-      color: #06283d;
+      color: white;
+      font-weight: bolder;
     }
 
     div {
@@ -198,7 +207,6 @@
             <span style="font-size: 130%; color: #ffa500">Ceylon</span></a
           >
           <button
-            onclick="changeColor()"
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
@@ -236,19 +244,35 @@
                       >Locations</a
                     >
                   </li>
-                  <li><a class="dropdown-item" href="#">People</a></li>
+                  <li>
+                    <a class="dropdown-item" href="../people/people.html"
+                      >People</a
+                    >
+                  </li>
 
                   <li>
-                    <a class="dropdown-item" href="#">History</a>
+                    <a class="dropdown-item" href="../History/history.html"
+                      >History</a
+                    >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Goverment & Society</a>
+                    <a
+                      class="dropdown-item"
+                      href="../goverment and society/government.html"
+                      >Goverment & Society</a
+                    >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Economy</a>
+                    <a class="dropdown-item" href="../economy/economy.html"
+                      >Economy</a
+                    >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Cultural Life</a>
+                    <a
+                      class="dropdown-item"
+                      href="../cultural life/cultural.html"
+                      >Cultural Life</a
+                    >
                   </li>
                 </ul>
               </li>
@@ -288,20 +312,24 @@
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Accommodation</a>
+                    <a
+                      class="dropdown-item"
+                      href="../../Services/Accomodation/Turism(hotel).html"
+                      >Accommodation</a
+                    >
                   </li>
                 </ul>
               </li>
 
               <li class="nav-item rounded">
-                <a class="nav-link active" href="../../Feedback/tourism1.html"
+                <a class="nav-link active" href="../../Feedback/feedback.html"
                   >Feedbacks</a
                 >
               </li>
               <li class="nav-item rounded">
                 <a
                   class="nav-link active"
-                  href="../../ContactUs/Tourism 215070N.html"
+                  href="../../ContactUs/ceylon travel.html"
                   >Contact us</a
                 >
               </li>
@@ -411,7 +439,7 @@
         </dd>
 
         <dd>
-          Hikaduwa Beach <br />
+          Hikkaduwa Beach <br />
           <img
             src="https://pix10.agoda.net/geo/city/262/1_262_02.jpg?ca=6&ce=1&s=1920x822"
             ,
@@ -446,7 +474,7 @@
         <dd>
           Ruwanweli Maha Seya<br />
           <img
-            src="https://i.pinimg.com/originals/16/fd/6a/16fd6a56aa9af9ca13d5e9f78cf0c840.jpg"
+            src="https://www.worldhistory.org/uploads/images/12647.jpg?v=1600075803"
             ,
             width="1300"
             height="750"
@@ -597,7 +625,7 @@
               >learn more....</a
             ><br />
           </p>
-          <<iframe
+          <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.340843605508!2d80.7660158147732!3d6.969056294965324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3805288fa714b%3A0xbb44afbf5324004c!2sVictoria%20Park%20-%20Nuwara%20Eliya!5e0!3m2!1sen!2slk!4v1657305834089!5m2!1sen!2slk"
             width="700"
             height="400"
@@ -653,10 +681,16 @@
 
     <footer>
       <div class="text-white" style="background-color: #1363df">
-        <p class="text-center p-4 m-0">Footer Content</p>
+        <p class="text-center p-4 m-0">
+          <span id="year"></span> &copy; Travel Ceylon
+        </p>
       </div>
     </footer>
-    <script></script>
+
+    <script>
+      let year = new Date().getFullYear();
+      document.getElementById("year").innerHTML = year;
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

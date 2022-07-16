@@ -187,3 +187,56 @@ nav {
   width: 65%;
 }
 /* slider */
+/* topButton */
+#topButton {
+  background-color: transparent;
+  color: #ff0000;
+  right: 18px;
+  bottom: 0;
+  position: fixed;
+  z-index: 300;
+  text-align: center;
+  font-size: 40px;
+  border: 0;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+.fa-circle-arrow-up {
+  border-radius: 100px;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    0px 21px 14px 1px rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 10px 13px -7px #000000, 0px 21px 14px 1px rgba(0, 0, 0, 0.04);
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+#topButton:hover {
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+/* topButton */

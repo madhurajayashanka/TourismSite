@@ -19,6 +19,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- jquery -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- fontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- fontAwesome -->
   </head>
 
   <style>
@@ -158,6 +167,60 @@
     }
     footer {
     }
+    /* topButton */
+    #topButton {
+      background-color: transparent;
+      color: #ff0000;
+      right: 18px;
+      bottom: 0;
+      position: fixed;
+      z-index: 300;
+      text-align: center;
+      font-size: 40px;
+      border: 0;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      -webkit-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out;
+    }
+    .fa-circle-arrow-up {
+      border-radius: 100px;
+      -webkit-box-shadow: 0px 10px 13px -7px #000000,
+        0px 21px 14px 1px rgba(0, 0, 0, 0.04);
+      box-shadow: 0px 10px 13px -7px #000000,
+        0px 21px 14px 1px rgba(0, 0, 0, 0.04);
+    }
+
+    @keyframes bounce {
+      0%,
+      100%,
+      20%,
+      50%,
+      80% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+      }
+      40% {
+        -webkit-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        transform: translateY(-30px);
+      }
+      60% {
+        -webkit-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+        transform: translateY(-15px);
+      }
+    }
+
+    #topButton:hover {
+      cursor: pointer;
+      animation-name: bounce;
+      -moz-animation-name: bounce;
+    }
+    /* topButton */
   </style>
   <body>
     <header style="padding-bottom: 80px">
@@ -972,7 +1035,14 @@
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     </div>
-
+    <!-- topButton -->
+    <button
+      onclick='window.scrollTo({top: 0, behavior: "smooth"});'
+      id="topButton"
+    >
+      <i class="fa-solid fa-circle-arrow-up"></i>
+    </button>
+    <!-- topButton -->
     <footer>
       <div class="text-white" style="background-color: #1363df">
         <p class="text-center p-4 m-0">

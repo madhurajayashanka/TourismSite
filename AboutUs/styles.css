@@ -248,7 +248,7 @@ section {
   right: 18px;
   bottom: 0;
   position: fixed;
-  z-index: 30;
+  z-index: 300;
   text-align: center;
   font-size: 40px;
   border: 0;

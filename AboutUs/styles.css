@@ -233,6 +233,13 @@ section {
 .explore-Srilanka ctn {
   margin-top: 40px;
 }
+.explore-Srilanka a {
+  text-decoration: none;
+}
+.explore-Srilanka a:hover {
+  color: white;
+  text-decoration: underline;
+}
 
 /* topButton */
 #topButton {
